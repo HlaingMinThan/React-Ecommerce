@@ -1,6 +1,7 @@
 import React from "react";
 import "./SignIn.style.css";
 import FormInput from "../../components/FormInput/FormInput.component"
+import Button from "../../components/Button/Button.component"
 class SignIn extends React.Component{
     state={
         email:"",
@@ -35,7 +36,7 @@ class SignIn extends React.Component{
                         value={this.state.password}
                         label="Password"
                     />
-                    <input type="submit" value="Sign In"/>
+                    <Button>Sign In</Button>
                 </form>
             </div>
         )
